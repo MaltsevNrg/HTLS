@@ -92,7 +92,7 @@ enum SportType: String, CaseIterable, Identifiable {
                             .tint(.blue)
                             .accessibilityLabel("Вес")
                             .accessibilityValue(String(format: "%.1f килограмм", weight))
-                            .onChange(of: weight) { _ in autoSave() }
+                              .onChange(of: weight) { autoSave() }
                         HStack(spacing: 16) {
                             Button(action: {
                                 UIImpactFeedbackGenerator(style: .medium).impactOccurred()
@@ -147,7 +147,7 @@ enum SportType: String, CaseIterable, Identifiable {
                             Text("Вредная еда")
                         }
                     }
-                    .onChange(of: badFood) { _ in autoSave() }
+                      .onChange(of: badFood) { autoSave() }
                     if badFood {
                         HStack(alignment: .top) {
                             Text("🗒️")
@@ -161,7 +161,7 @@ enum SportType: String, CaseIterable, Identifiable {
                                 }
                                 TextEditor(text: $badFoodComment)
                                     .frame(minHeight: 60)
-                                    .onChange(of: badFoodComment) { _ in autoSave() }
+                                      .onChange(of: badFoodComment) { autoSave() }
                             }
                         }
                     }
@@ -172,7 +172,7 @@ enum SportType: String, CaseIterable, Identifiable {
                             Text("Алкоголь")
                         }
                     }
-                    .onChange(of: alcohol) { _ in autoSave() }
+                      .onChange(of: alcohol) { autoSave() }
                     if alcohol {
                         HStack(alignment: .top) {
                             Text("🗒️")
@@ -186,7 +186,7 @@ enum SportType: String, CaseIterable, Identifiable {
                                 }
                                 TextEditor(text: $alcoholComment)
                                     .frame(minHeight: 60)
-                                    .onChange(of: alcoholComment) { _ in autoSave() }
+                                      .onChange(of: alcoholComment) { autoSave() }
                             }
                         }
                     }
@@ -197,7 +197,7 @@ enum SportType: String, CaseIterable, Identifiable {
                             Text("Курение")
                         }
                     }
-                    .onChange(of: smoking) { _ in autoSave() }
+                      .onChange(of: smoking) { autoSave() }
                     if smoking {
                         HStack(alignment: .top) {
                             Text("🗒️")
@@ -211,7 +211,7 @@ enum SportType: String, CaseIterable, Identifiable {
                                 }
                                 TextEditor(text: $smokingComment)
                                     .frame(minHeight: 60)
-                                    .onChange(of: smokingComment) { _ in autoSave() }
+                                      .onChange(of: smokingComment) { autoSave() }
                             }
                         }
                     }
@@ -243,7 +243,7 @@ enum SportType: String, CaseIterable, Identifiable {
                             Text("Спорт")
                         }
                     }
-                    .onChange(of: sport) { _ in autoSave() }
+                    .onChange(of: sport) { autoSave() }
                     if sport {
                         Picker(
                             selection: $selectedSport,
@@ -253,7 +253,7 @@ enum SportType: String, CaseIterable, Identifiable {
                             Text("Отжимания").tag(SportType.pushUps)
                         }
                         .pickerStyle(SegmentedPickerStyle())
-                        .onChange(of: selectedSport) { _ in
+                        .onChange(of: selectedSport) {
                             generatePlan()
                             autoSave()
                         }
@@ -311,7 +311,7 @@ enum SportType: String, CaseIterable, Identifiable {
                             .padding(.vertical, 6)
                         }
                         TextField("Комментарий к тренировке...", text: $sportComment)
-                            .onChange(of: sportComment) { _ in autoSave() }
+                            .onChange(of: sportComment) { autoSave() }
                     }
                     .simultaneousGesture(DragGesture(minimumDistance: 10)
                         .onChanged { _ in
@@ -439,7 +439,7 @@ enum SportType: String, CaseIterable, Identifiable {
                     Spacer()
                     Stepper("", value: $steps, in: 0...200000, step: 10)
                         .labelsHidden()
-                        .onChange(of: steps) { _ in autoSave() }
+                        .onChange(of: steps) { autoSave() }
                 }
             }
         }
