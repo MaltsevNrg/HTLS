@@ -41,6 +41,7 @@ struct ContentView: View {
     @EnvironmentObject var storageManager: StorageManager
 
     @State private var showingHistorySheet = false
+    @State private var scrollHapticTriggered = false
 
     var body: some View {
         NavigationView {
@@ -62,6 +63,7 @@ struct ContentView: View {
                             .onChange(of: weight) { _ in autoSave() }
                         HStack(spacing: 16) {
                             Button(action: {
+                                UIImpactFeedbackGenerator(style: .medium).impactOccurred()
                                 weight = Double(round(10 * max(70.0, (weight - 0.1))) / 10)
                                 autoSave()
                             }) {
@@ -69,6 +71,7 @@ struct ContentView: View {
                             }
                             .buttonStyle(.borderedProminent)
                             Button(action: {
+                                UIImpactFeedbackGenerator(style: .medium).impactOccurred()
                                 weight = Double(round(10 * min(100.0, (weight + 0.1))) / 10)
                                 autoSave()
                             }) {
@@ -114,11 +117,20 @@ struct ContentView: View {
                     }
                     .onChange(of: badFood) { _ in autoSave() }
                     if badFood {
-                        HStack {
+                        HStack(alignment: .top) {
                             Text("🗒️")
                                 .foregroundColor(.secondary)
-                            TextField("Комментарий...", text: $badFoodComment)
-                                .onChange(of: badFoodComment) { _ in autoSave() }
+                            ZStack(alignment: .topLeading) {
+                                if badFoodComment.isEmpty {
+                                    Text("Комментарий...")
+                                        .foregroundColor(.secondary)
+                                        .padding(.top, 8)
+                                        .padding(.leading, 4)
+                                }
+                                TextEditor(text: $badFoodComment)
+                                    .frame(minHeight: 60)
+                                    .onChange(of: badFoodComment) { _ in autoSave() }
+                            }
                         }
                     }
 
@@ -130,11 +142,20 @@ struct ContentView: View {
                     }
                     .onChange(of: alcohol) { _ in autoSave() }
                     if alcohol {
-                        HStack {
+                        HStack(alignment: .top) {
                             Text("🗒️")
                                 .foregroundColor(.secondary)
-                            TextField("Комментарий...", text: $alcoholComment)
-                                .onChange(of: alcoholComment) { _ in autoSave() }
+                            ZStack(alignment: .topLeading) {
+                                if alcoholComment.isEmpty {
+                                    Text("Комментарий...")
+                                        .foregroundColor(.secondary)
+                                        .padding(.top, 8)
+                                        .padding(.leading, 4)
+                                }
+                                TextEditor(text: $alcoholComment)
+                                    .frame(minHeight: 60)
+                                    .onChange(of: alcoholComment) { _ in autoSave() }
+                            }
                         }
                     }
 
@@ -146,16 +167,25 @@ struct ContentView: View {
                     }
                     .onChange(of: smoking) { _ in autoSave() }
                     if smoking {
-                        HStack {
+                        HStack(alignment: .top) {
                             Text("🗒️")
                                 .foregroundColor(.secondary)
-                            TextField("Комментарий...", text: $smokingComment)
-                                .onChange(of: smokingComment) { _ in autoSave() }
+                            ZStack(alignment: .topLeading) {
+                                if smokingComment.isEmpty {
+                                    Text("Комментарий...")
+                                        .foregroundColor(.secondary)
+                                        .padding(.top, 8)
+                                        .padding(.leading, 4)
+                                }
+                                TextEditor(text: $smokingComment)
+                                    .frame(minHeight: 60)
+                                    .onChange(of: smokingComment) { _ in autoSave() }
+                            }
                         }
                     }
                 }
 
-                Section(header: Text("Послушание")) {
+                Section(header: Text("Активность")) {
                     HStack {
                         Text("🚶‍♂️")
                         Text("Шаги за сегодня")
@@ -210,14 +240,9 @@ struct ContentView: View {
                                 Text(ex.name)
                                     .font(.headline)
                                 HStack(spacing: 12) {
-                                    Text("Отдых: \(ex.restSeconds) сек")
+                                    Text("Отдых: \(ex.restSeconds) секунд")
                                         .font(.caption)
                                         .foregroundColor(.secondary)
-                                    Text(ex.metric == .reps ? "Повторы" : "Секунды")
-                                        .font(.caption2)
-                                        .padding(4)
-                                        .background(Color.gray.opacity(0.15))
-                                        .cornerRadius(6)
                                 }
                                 ForEach(0..<ex.sets, id: \.self) { setIndex in
                                     HStack {
@@ -259,6 +284,17 @@ struct ContentView: View {
                         TextField("Комментарий к тренировке...", text: $sportComment)
                             .onChange(of: sportComment) { _ in autoSave() }
                     }
+                    .simultaneousGesture(DragGesture(minimumDistance: 10)
+                        .onChanged { _ in
+                            if !scrollHapticTriggered {
+                                UIImpactFeedbackGenerator(style: .light).impactOccurred()
+                                scrollHapticTriggered = true
+                            }
+                        }
+                        .onEnded { _ in
+                            scrollHapticTriggered = false
+                        }
+                    )
                 }
 
             }
@@ -333,10 +369,9 @@ struct ContentView: View {
         case .pushUps:
             trainingExercises = [
                 ExercisePerformance(name: "От пола", metric: .reps, sets: 3, restSeconds: 90, defaultValue: 20),
-                ExercisePerformance(
-                    name: "От пола медленно", metric: .reps, sets: 2, restSeconds: 120, defaultValue: 10),
+                ExercisePerformance(name: "От пола медленно", metric: .reps, sets: 2, restSeconds: 120, defaultValue: 10),
                 ExercisePerformance(name: "Ноги на стуле", metric: .reps, sets: 2, restSeconds: 90, defaultValue: 14),
-                ExercisePerformance(name: "Максимум", metric: .reps, sets: 1, restSeconds: 0, defaultValue: 20),
+                ExercisePerformance(name: "Максимум", metric: .reps, sets: 1, restSeconds: 120, defaultValue: 20),
             ]
         case .pullUps:
             trainingExercises = [
@@ -344,8 +379,7 @@ struct ContentView: View {
                 ExercisePerformance(name: "С опорой", metric: .reps, sets: 2, restSeconds: 120, defaultValue: 2),
                 ExercisePerformance(name: "Негативы", metric: .reps, sets: 2, restSeconds: 120, defaultValue: 2),
                 ExercisePerformance(name: "Внутренний хват", metric: .reps, sets: 1, restSeconds: 120, defaultValue: 2),
-                ExercisePerformance(
-                    name: "Вис на максимум", metric: .seconds, sets: 1, restSeconds: 0, defaultValue: 30),
+                ExercisePerformance(name: "Вис на максимум", metric: .seconds, sets: 1, restSeconds: 120, defaultValue: 30),
             ]
         }
     }
