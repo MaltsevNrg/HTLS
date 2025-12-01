@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import UIKit
 
 enum SportType: String, CaseIterable, Identifiable {
     case pullUps = "Подтягивания"
@@ -219,34 +220,37 @@ struct ContentView: View {
                                         .cornerRadius(6)
                                 }
                                 ForEach(0..<ex.sets, id: \.self) { setIndex in
-                                    HStack(spacing: 16) {
+                                    HStack {
                                         Text("Подход \(setIndex + 1)")
                                             .frame(width: 80, alignment: .leading)
-                                        Button(action: {
-                                            if trainingExercises[idx].values[setIndex] > 0 {
-                                                trainingExercises[idx].values[setIndex] -= (ex.metric == .reps ? 1 : 5)
-                                                autoSave()
+                                        Spacer()
+                                        HStack(spacing: 16) {
+                                            Button(action: {
+                                                UIImpactFeedbackGenerator(style: .medium).impactOccurred()
+                                                if trainingExercises[idx].values[setIndex] > 0 {
+                                                    trainingExercises[idx].values[setIndex] -= (ex.metric == .reps ? 1 : 5)
+                                                    autoSave()
+                                                }
+                                            }) {
+                                                Text("−")
                                             }
-                                        }) {
-                                            Image(systemName: "minus")
-                                                .frame(width: 44, height: 44)
+                                            .buttonStyle(.borderedProminent)
+                                            Text(
+                                                ex.metric == .reps
+                                                    ? "\(trainingExercises[idx].values[setIndex]) раз"
+                                                    : "\(trainingExercises[idx].values[setIndex]) сек"
+                                            )
+                                            .monospacedDigit()
+                                            .frame(minWidth: 60)
+                                            Button(action: {
+                                                UIImpactFeedbackGenerator(style: .medium).impactOccurred()
+                                                trainingExercises[idx].values[setIndex] += (ex.metric == .reps ? 1 : 5)
+                                                autoSave()
+                                            }) {
+                                                Text("+")
+                                            }
+                                            .buttonStyle(.borderedProminent)
                                         }
-                                        .buttonStyle(.borderedProminent)
-                                        Text(
-                                            ex.metric == .reps
-                                                ? "\(trainingExercises[idx].values[setIndex]) раз"
-                                                : "\(trainingExercises[idx].values[setIndex]) сек"
-                                        )
-                                        .monospacedDigit()
-                                        .frame(minWidth: 60)
-                                        Button(action: {
-                                            trainingExercises[idx].values[setIndex] += (ex.metric == .reps ? 1 : 5)
-                                            autoSave()
-                                        }) {
-                                            Image(systemName: "plus")
-                                                .frame(width: 44, height: 44)
-                                        }
-                                        .buttonStyle(.borderedProminent)
                                     }
                                 }
                             }
