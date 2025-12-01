@@ -40,6 +40,15 @@ final class HealthStore: ObservableObject {
     }
 
     init() {
+        // In SwiftUI previews running inside Xcode we should not call HealthKit APIs.
+        if ProcessInfo.processInfo.environment["XCODE_RUNNING_FOR_PREVIEWS"] == "1" {
+            authorizationStatus = .unavailable
+            isLoading = false
+            errorMessage = nil
+            stepsToday = 0
+            return
+        }
+
         checkAvailability()
     }
 
@@ -116,7 +125,16 @@ final class HealthStore: ObservableObject {
             Task { @MainActor [weak self] in
                 guard let self = self else { return }
 
-                if let error = error {
+                if let error = error as NSError? {
+                    // If there is no data for the requested predicate, treat it as zero steps rather than an error.
+                    if error.domain == HKErrorDomain,
+                       let hkCode = HKError.Code(rawValue: error.code),
+                       hkCode == .noData {
+                        self.stepsToday = 0
+                        self.errorMessage = nil
+                        return
+                    }
+
                     self.errorMessage = "Ошибка получения данных: \(error.localizedDescription)"
                     return
                 }
