@@ -125,17 +125,17 @@ final class HealthStore: ObservableObject {
             Task { @MainActor [weak self] in
                 guard let self = self else { return }
 
-                if let error = error as NSError? {
+                if let nsError = error as NSError? {
                     // If there is no data for the requested predicate, treat it as zero steps rather than an error.
-                    if error.domain == HKErrorDomain,
-                       let hkCode = HKError.Code(rawValue: error.code),
-                       hkCode == .noData {
+                    // The exact HKError case name may vary between SDK versions, so detect by description as a fallback.
+                    let desc = nsError.localizedDescription
+                    if desc.contains("No data available") || desc.contains("No data available for the specified predicate") {
                         self.stepsToday = 0
                         self.errorMessage = nil
                         return
                     }
 
-                    self.errorMessage = "Ошибка получения данных: \(error.localizedDescription)"
+                    self.errorMessage = "Ошибка получения данных: \(desc)"
                     return
                 }
 
