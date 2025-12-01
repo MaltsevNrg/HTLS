@@ -33,6 +33,7 @@ enum SportType: String, CaseIterable, Identifiable {
     @State private var smoking = false
 
     @State private var steps: Int = 0
+    @State private var previewStepsString: String = ""
 
     @State private var badFoodComment = ""
     @State private var alcoholComment = ""
@@ -72,6 +73,9 @@ enum SportType: String, CaseIterable, Identifiable {
         _sportComment = State(initialValue: editingEntry?.sportComment ?? "")
           _trainingExercises = State(initialValue: editingEntry?.trainingExercises ?? [])
           _steps = State(initialValue: editingEntry?.steps ?? 0)
+          if ProcessInfo.processInfo.environment["XCODE_RUNNING_FOR_PREVIEWS"] == "1" {
+              _previewStepsString = State(initialValue: "3300")
+          }
         self.editingID = editingEntry?.id
         self.editingDate = editingEntry?.date
     }
@@ -426,11 +430,24 @@ enum SportType: String, CaseIterable, Identifiable {
         let isToday = Calendar.current.isDateInToday(editingDate ?? Date())
         return Group {
             if isToday {
-                if healthStore.isLoading {
-                    ProgressView()
+                // In previews when HealthKit is unavailable show an editable field with cursor
+                if ProcessInfo.processInfo.environment["XCODE_RUNNING_FOR_PREVIEWS"] == "1" && healthStore.authorizationStatus != .authorized {
+                    HStack {
+                        TextField("", text: $previewStepsString)
+                            .keyboardType(.numberPad)
+                            .multilineTextAlignment(.trailing)
+                            .font(.system(.body, design: .monospaced)).bold()
+                            .frame(minWidth: 60)
+                        Text("шагов")
+                            .foregroundColor(.secondary)
+                    }
                 } else {
-                    Text("\(healthStore.stepsToday)")
-                        .bold()
+                    if healthStore.isLoading {
+                        ProgressView()
+                    } else {
+                        Text("\(healthStore.stepsToday)")
+                            .bold()
+                    }
                 }
             } else {
                 HStack {
@@ -448,5 +465,6 @@ enum SportType: String, CaseIterable, Identifiable {
 }
 
 #Preview {
-        ContentView()
+    ContentView()
+        .environmentObject(StorageManager())
 }
