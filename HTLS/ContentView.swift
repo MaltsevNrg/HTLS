@@ -438,8 +438,6 @@ enum SportType: String, CaseIterable, Identifiable {
                             .multilineTextAlignment(.trailing)
                             .font(.system(.body, design: .monospaced)).bold()
                             .frame(minWidth: 60)
-                        Text("шагов")
-                            .foregroundColor(.secondary)
                     }
                 } else {
                     if healthStore.isLoading {
