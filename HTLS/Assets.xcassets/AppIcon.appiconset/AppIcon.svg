@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1024" height="1024" xmlns="http://www.w3.org/2000/svg">
+  <!-- Фон с градиентом -->
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF6B6B;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FF5252;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <!-- Фон -->
+  <rect width="1024" height="1024" fill="url(#grad)" rx="226"/>
+  
+  <!-- Тень для креста -->
+  <g filter="url(#shadow)">
+    <!-- Крест -->
+    <g fill="white">
+      <!-- Вертикальная линия -->
+      <rect x="412" y="212" width="200" height="600" rx="30"/>
+      <!-- Горизонтальная линия -->
+      <rect x="212" y="412" width="600" height="200" rx="30"/>
+    </g>
+  </g>
+  
+  <!-- Маленькое сердечко в центре -->
+  <path d="M 512 480 
+           C 512 460, 490 440, 470 440
+           C 450 440, 430 460, 430 480
+           C 430 460, 410 440, 390 440
+           C 370 440, 350 460, 350 480
+           C 350 520, 390 560, 430 600
+           C 470 560, 512 520, 512 480
+           Z" 
+        fill="#FF6B6B" opacity="0.3"/>
+</svg>
