@@ -28,7 +28,10 @@ struct HistoryView: View {
                 } else {
                     List {
                         ForEach(storageManager.entries) { entry in
-                            EntryRow(entry: entry)
+                            NavigationLink(destination: ContentView(editingEntry: entry)
+                                .environmentObject(storageManager)) {
+                                EntryRow(entry: entry)
+                            }
                         }
                         .onDelete { indexSet in
                             if let index = indexSet.first {

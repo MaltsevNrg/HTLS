@@ -14,8 +14,10 @@ struct HTLSApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
-                .environmentObject(storageManager)
+            NavigationView {
+                ContentView()
+                    .environmentObject(storageManager)
+            }
         }
     }
 }

@@ -19,14 +19,20 @@ enum SportType: String, CaseIterable, Identifiable {
         case .pullUps: return "figure.pullup"
         case .pushUps: return "figure.pushup"
         }
-    }
-}
+        }
 
-struct ContentView: View {
-    @State private var weight: Double = 90.0
+    
+    }
+
+    struct ContentView: View {
+    let editingEntry: DailyEntry?
+
+    @State private var weight: Double
     @State private var badFood = false
     @State private var alcohol = false
     @State private var smoking = false
+
+    @State private var steps: Int = 0
 
     @State private var badFoodComment = ""
     @State private var alcoholComment = ""
@@ -37,15 +43,41 @@ struct ContentView: View {
     @State private var sportComment = ""
     @State private var trainingExercises: [ExercisePerformance] = []
 
+    // If editing an existing history entry, keep its id/date to preserve identity
+    private var editingID: UUID?
+    private var editingDate: Date?
+
     @StateObject private var healthStore = HealthStore()
     @EnvironmentObject var storageManager: StorageManager
 
     @State private var showingHistorySheet = false
     @State private var scrollHapticTriggered = false
+    // MARK: - Init
+    init(editingEntry: DailyEntry? = nil) {
+        self.editingEntry = editingEntry
+        // initialize states from editingEntry or defaults
+        _weight = State(initialValue: editingEntry?.weight ?? 90.0)
+        _badFood = State(initialValue: editingEntry?.badFood ?? false)
+        _alcohol = State(initialValue: editingEntry?.alcohol ?? false)
+        _smoking = State(initialValue: editingEntry?.smoking ?? false)
+        _badFoodComment = State(initialValue: editingEntry?.badFoodComment ?? "")
+        _alcoholComment = State(initialValue: editingEntry?.alcoholComment ?? "")
+        _smokingComment = State(initialValue: editingEntry?.smokingComment ?? "")
+        _sport = State(initialValue: editingEntry?.sport ?? false)
+        if let sportTypeRaw = editingEntry?.sportType, let st = SportType.allCases.first(where: { $0.rawValue == sportTypeRaw }) {
+            _selectedSport = State(initialValue: st)
+        } else {
+            _selectedSport = State(initialValue: .pullUps)
+        }
+        _sportComment = State(initialValue: editingEntry?.sportComment ?? "")
+          _trainingExercises = State(initialValue: editingEntry?.trainingExercises ?? [])
+          _steps = State(initialValue: editingEntry?.steps ?? 0)
+        self.editingID = editingEntry?.id
+        self.editingDate = editingEntry?.date
+    }
 
     var body: some View {
-        NavigationView {
-            Form {
+        Form {
                 // Ввод веса
                 Section(header: Text("Вес")) {
                     VStack(spacing: 12) {
@@ -188,25 +220,22 @@ struct ContentView: View {
                 Section(header: Text("Активность")) {
                     HStack {
                         Text("🚶‍♂️")
-                        Text("Шаги за сегодня")
+                        Text("Шаги")
                         Spacer()
-                        if healthStore.isLoading {
-                            ProgressView()
-                        } else {
-                            Text("\(healthStore.stepsToday)")
-                                .bold()
-                        }
+                        stepsView
                     }
-                    .contextMenu {
-                        Button(action: {
-                            healthStore.refreshSteps()
-                        }) {
-                            HStack {
-                                Text("🔄")
-                                Text("Обновить")
+                            .contextMenu {
+                                Button(action: {
+                                    if Calendar.current.isDateInToday(editingDate ?? Date()) {
+                                        healthStore.refreshSteps()
+                                    }
+                                }) {
+                                    HStack {
+                                        Text("🔄")
+                                        Text("Обновить")
+                                    }
+                                }
                             }
-                        }
-                    }
 
                     Toggle(isOn: $sport) {
                         HStack {
@@ -298,7 +327,7 @@ struct ContentView: View {
                 }
 
             }
-            .navigationTitle(todayTitle())
+            .navigationTitle(editingEntry != nil ? editingTitle() : todayTitle())
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button(action: { showingHistorySheet = true }) {
@@ -310,21 +339,21 @@ struct ContentView: View {
                 HistoryView()
             }
             .onAppear {
-                loadTodayEntry()
+                if editingEntry == nil { loadTodayEntry() }
             }
         }
-    }
 
     private func autoSave() {
         let entry = DailyEntry(
-            date: Date(),
+            id: editingID ?? UUID(),
+            date: editingDate ?? Date(),
             badFood: badFood,
             badFoodComment: badFoodComment,
             alcohol: alcohol,
             alcoholComment: alcoholComment,
             smoking: smoking,
             smokingComment: smokingComment,
-            steps: healthStore.stepsToday,
+              steps: Calendar.current.isDateInToday(editingDate ?? Date()) ? healthStore.stepsToday : steps,
             weight: weight,
             sport: sport,
             sportType: sport ? selectedSport.rawValue : nil,
@@ -332,6 +361,14 @@ struct ContentView: View {
             trainingExercises: sport ? trainingExercises : nil
         )
         storageManager.saveEntry(entry)
+    }
+
+    private func editingTitle() -> String {
+        guard let d = editingDate else { return "Запись" }
+        let formatter = DateFormatter()
+        formatter.locale = Locale(identifier: "ru_RU")
+        formatter.dateStyle = .long
+        return formatter.string(from: d)
     }
 
     private func todayTitle() -> String {
@@ -354,6 +391,7 @@ struct ContentView: View {
             if let w = todayEntry.weight {
                 weight = w
             }
+              steps = todayEntry.steps
             if let sportType = todayEntry.sportType,
                 let type = SportType.allCases.first(where: { $0.rawValue == sportType })
             {
@@ -383,8 +421,32 @@ struct ContentView: View {
             ]
         }
     }
+
+    private var stepsView: some View {
+        let isToday = Calendar.current.isDateInToday(editingDate ?? Date())
+        return Group {
+            if isToday {
+                if healthStore.isLoading {
+                    ProgressView()
+                } else {
+                    Text("\(healthStore.stepsToday)")
+                        .bold()
+                }
+            } else {
+                HStack {
+                    Text("\(steps)")
+                        .bold()
+                    Spacer()
+                    Stepper("", value: $steps, in: 0...200000, step: 10)
+                        .labelsHidden()
+                        .onChange(of: steps) { _ in autoSave() }
+                }
+            }
+        }
+    }
+
 }
 
 #Preview {
-    ContentView()
+        ContentView()
 }
