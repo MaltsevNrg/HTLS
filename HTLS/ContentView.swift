@@ -437,7 +437,7 @@ enum SportType: String, CaseIterable, Identifiable {
                     Text("\(steps)")
                         .bold()
                     Spacer()
-                    Stepper("", value: $steps, in: 0...200000, step: 10)
+                    Stepper("", value: $steps, in: 0...30000, step: 100)
                         .labelsHidden()
                         .onChange(of: steps) { autoSave() }
                 }
