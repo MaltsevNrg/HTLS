@@ -1,718 +1,1520 @@
-[
-  {
-    "alcohol" : true,
-    "alcoholComment" : "2 пива, 2 вина",
-    "badFood" : true,
-    "badFoodComment" : "Красная меля с белым",
-    "date" : "2025-10-14T21:00:00Z",
-    "id" : "E2DAA24B-8583-4722-AEBD-936FC2E09A1A",
-    "smoking" : false,
-    "smokingComment" : "",
-    "sport" : false,
-    "sportComment" : "",
-    "steps" : 0,
-    "weight" : 92.2
-  },
-  {
-    "alcohol" : false,
-    "alcoholComment" : "",
-    "badFood" : false,
-    "badFoodComment" : "",
-    "date" : "2025-10-13T21:00:00Z",
-    "id" : "F56828DF-1451-421F-A34F-FDDB66663E9C",
-    "smoking" : false,
-    "smokingComment" : "",
-    "sport" : true,
-    "sportComment" : "",
-    "sportType" : "Подтягивания",
-    "steps" : 10103,
-    "trainingExercises" : [
-      {
-        "id" : "DC16A5D4-01E6-42CC-B77C-E7720F4AA53E",
-        "metric" : "reps",
-        "name" : "С опорой",
-        "restSeconds" : 120,
-        "sets" : 1,
-        "values" : [
-          2
-        ]
-      }
-    ],
-    "weight" : 92.6
-  },
-  {
-    "alcohol" : false,
-    "alcoholComment" : "",
-    "badFood" : true,
-    "badFoodComment" : "Пико и лор = 92.5",
-    "date" : "2025-10-15T21:00:00Z",
-    "id" : "0652A7CD-942D-42E2-B479-1A5706C2BC61",
-    "smoking" : false,
-    "smokingComment" : "",
-    "sport" : true,
-    "sportComment" : "",
-    "sportType" : "Отжимания",
-    "steps" : 0
-  },
-  {
-    "alcohol" : true,
-    "alcoholComment" : "Красное вино",
-    "badFood" : false,
-    "badFoodComment" : "",
-    "date" : "2025-10-15T21:00:00Z",
-    "id" : "9F69DE27-E7FE-4892-97D8-67B6EA2F02BB",
-    "smoking" : true,
-    "smokingComment" : "Блюм, с мясом",
-    "sport" : false,
-    "sportComment" : "",
-    "steps" : 0,
-    "weight" : 92.2
-  },
-  {
-    "alcohol" : false,
-    "alcoholComment" : "",
-    "badFood" : false,
-    "badFoodComment" : "",
-    "date" : "2025-10-16T21:00:00Z",
-    "id" : "41823EFC-2F48-4ADA-A32B-CDEE45C1C465",
-    "smoking" : true,
-    "smokingComment" : "Блюм, с мясом",
-    "sport" : false,
-    "sportComment" : "",
-    "steps" : 3950,
-    "weight" : 93.5
-  },
-  {
-    "alcohol" : false,
-    "alcoholComment" : "",
-    "badFood" : false,
-    "badFoodComment" : "",
-    "date" : "2025-10-17T21:00:00Z",
-    "id" : "5AB350FA-27A6-4041-A3AA-5837A64295E8",
-    "smoking" : false,
-    "smokingComment" : "",
-    "sport" : false,
-    "sportComment" : "",
-    "steps" : 400,
-    "weight" : 92.6
-  },
-  {
-    "alcohol" : false,
-    "alcoholComment" : "",
-    "badFood" : false,
-    "badFoodComment" : "",
-    "date" : "2025-10-18T21:00:00Z",
-    "id" : "E29B9C74-AD1F-410B-BE4C-E2D1CD285773",
-    "smoking" : false,
-    "smokingComment" : "",
-    "sport" : false,
-    "sportComment" : "",
-    "steps" : 1000,
-    "weight" : 92.7
-  },
-  {
-    "alcohol" : true,
-    "alcoholComment" : "Красное вино",
-    "badFood" : false,
-    "badFoodComment" : "",
-    "date" : "2025-10-19T21:00:00Z",
-    "id" : "658B8D6A-87B3-432F-838B-4044E9A3D5AE",
-    "smoking" : true,
-    "smokingComment" : "Дело, нельзя",
-    "sport" : false,
-    "sportComment" : "",
-    "steps" : 4900,
-    "weight" : 92.5
-  },
-  {
-    "alcohol" : true,
-    "alcoholComment" : "Пиво",
-    "badFood" : true,
-    "badFoodComment" : "Чарли джем",
-    "date" : "2025-10-20T21:00:00Z",
-    "id" : "0B9D9A6B-F6DB-437D-A78B-B8A1281BAB5A",
-    "smoking" : false,
-    "smokingComment" : "",
-    "sport" : true,
-    "sportComment" : "",
-    "sportType" : "Отжимания+жжение",
-    "steps" : 3000,
-    "weight" : 91.6
-  },
-  {
-    "alcohol" : false,
-    "alcoholComment" : "",
-    "badFood" : false,
-    "badFoodComment" : "",
-    "date" : "2025-10-21T21:00:00Z",
-    "id" : "D94FD3FB-0251-4B7A-8AFA-B263B7C249D1",
-    "smoking" : false,
-    "smokingComment" : "",
-    "sport" : true,
-    "sportComment" : "",
-    "sportType" : "Отжимания",
-    "steps" : 3100,
-    "trainingExercises" : [
-      {
-        "id" : "63577277-C328-4D73-B8E1-F69922984611",
-        "metric" : "reps",
-        "name" : "От пола медленно",
-        "restSeconds" : 120,
-        "sets" : 2,
-        "values" : [
-          10,
-          10
-        ]
-      }
-    ],
-    "weight" : 91.2
-  },
-  {
-    "alcohol" : false,
-    "alcoholComment" : "",
-    "badFood" : false,
-    "badFoodComment" : "",
-    "date" : "2025-10-22T21:00:00Z",
-    "id" : "727A4DEA-F2E6-4C9E-9F65-CD684E2335DC",
-    "smoking" : true,
-    "smokingComment" : "У Питера с трам",
-    "sport" : false,
-    "sportComment" : "",
-    "steps" : 4900,
-    "weight" : 92.6
-  },
-  {
-    "alcohol" : true,
-    "alcoholComment" : "Дело, нельзя",
-    "badFood" : false,
-    "badFoodComment" : "",
-    "date" : "2025-10-23T21:00:00Z",
-    "id" : "706DF8B9-902C-4FDD-AAF6-ED46211488B5",
-    "smoking" : true,
-    "smokingComment" : "Блюм, с мясом",
-    "sport" : true,
-    "sportComment" : "",
-    "sportType" : "Отжимания",
-    "steps" : 12090121201290,
-    "trainingExercises" : [
-      {
-        "id" : "4D6E2D3A-F6F9-4AC3-922C-04A2F0284DEF",
-        "metric" : "reps",
-        "name" : "Ноги на стуле",
-        "restSeconds" : 90,
-        "sets" : 2,
-        "values" : [
-          14,
-          14
-        ]
-      }
-    ],
-    "weight" : 92.1
-  },
-  {
-    "alcohol" : false,
-    "alcoholComment" : "",
-    "badFood" : true,
-    "badFoodComment" : "Пицца в обед, без ужина",
-    "date" : "2025-10-24T21:00:00Z",
-    "id" : "3A905EDE-0A92-48D7-8E52-AD42A1BF7F2A",
-    "smoking" : false,
-    "smokingComment" : "",
-    "sport" : false,
-    "sportComment" : "",
-    "steps" : 400,
-    "weight" : 91.5
-  },
-  {
-    "alcohol" : false,
-    "alcoholComment" : "",
-    "badFood" : false,
-    "badFoodComment" : "",
-    "date" : "2025-10-25T21:00:00Z",
-    "id" : "CCDF2523-2016-41CC-BD8A-4CA767E5E18A",
-    "smoking" : false,
-    "smokingComment" : "",
-    "sport" : false,
-    "sportComment" : "",
-    "steps" : 10000,
-    "weight" : 91.7
-  },
-  {
-    "alcohol" : false,
-    "alcoholComment" : "",
-    "badFood" : false,
-    "badFoodComment" : "",
-    "date" : "2025-10-26T21:00:00Z",
-    "id" : "C03BF04D-6E20-49C0-BE5B-C5B4D47F1DA1",
-    "smoking" : false,
-    "smokingComment" : "",
-    "sport" : false,
-    "sportComment" : "",
-    "steps" : 7800,
-    "weight" : 91.6
-  },
-  {
-    "alcohol" : true,
-    "alcoholComment" : "Блюм, с мясом",
-    "badFood" : true,
-    "badFoodComment" : "Штраф за борьку",
-    "date" : "2025-10-27T21:00:00Z",
-    "id" : "C5A9CCED-1C4A-4B34-B9C0-F1CE6861D9F7",
-    "smoking" : true,
-    "smokingComment" : "В падв, ЕР Турция",
-    "sport" : true,
-    "sportComment" : "",
-    "sportType" : "Отжимания",
-    "steps" : 3600,
-    "weight" : 91.9
-  },
-  {
-    "alcohol" : false,
-    "alcoholComment" : "",
-    "badFood" : false,
-    "badFoodComment" : "",
-    "date" : "2025-10-28T21:00:00Z",
-    "id" : "7E35D227-D841-4379-A68F-9FE5A8E03DFD",
-    "smoking" : true,
-    "smokingComment" : "В падв с тлцм",
-    "sport" : false,
-    "sportComment" : "",
-    "steps" : 3000,
-    "weight" : 91.7
-  },
-  {
-    "alcohol" : false,
-    "alcoholComment" : "",
-    "badFood" : true,
-    "badFoodComment" : "Штраф за борьку",
-    "date" : "2025-10-29T21:00:00Z",
-    "id" : "E95297C0-A035-43C8-BADA-A21741CE97E5",
-    "smoking" : false,
-    "smokingComment" : "",
-    "sport" : false,
-    "sportComment" : "",
-    "steps" : 7550,
-    "weight" : 90.5
-  },
-  {
-    "alcohol" : false,
-    "alcoholComment" : "",
-    "badFood" : false,
-    "badFoodComment" : "",
-    "date" : "2025-10-30T21:00:00Z",
-    "id" : "3C926430-A2D1-4BA0-8824-2C0E98D8DF7A",
-    "smoking" : false,
-    "smokingComment" : "",
-    "sport" : false,
-    "sportComment" : "",
-    "steps" : 750,
-    "weight" : 92.5
-  },
-  {
-    "alcohol" : false,
-    "alcoholComment" : "",
-    "badFood" : false,
-    "badFoodComment" : "",
-    "date" : "2025-10-31T21:00:00Z",
-    "id" : "65BDE7EA-6F33-4D2B-8B66-7A6CE6CC93D1",
-    "smoking" : false,
-    "smokingComment" : "",
-    "sport" : true,
-    "sportComment" : "",
-    "sportType" : "Отжимания",
-    "steps" : 7800,
-    "weight" : 92.3
-  },
-  {
-    "alcohol" : false,
-    "alcoholComment" : "",
-    "badFood" : true,
-    "badFoodComment" : "Меню Турции",
-    "date" : "2025-11-01T21:00:00Z",
-    "id" : "BD704FC6-8322-4D7A-AE03-16118464B109",
-    "smoking" : false,
-    "smokingComment" : "",
-    "sport" : true,
-    "sportComment" : "",
-    "sportType" : "Заехали уездів",
-    "steps" : 13300
-  },
-  {
-    "alcohol" : false,
-    "alcoholComment" : "",
-    "badFood" : true,
-    "badFoodComment" : "Чарли джем, торт и рулет",
-    "date" : "2025-11-02T21:00:00Z",
-    "id" : "4E5B2933-CC42-4CCC-92E9-BDBC33BB3A50",
-    "smoking" : false,
-    "smokingComment" : "",
-    "sport" : true,
-    "sportComment" : "",
-    "sportType" : "Отжимания",
-    "steps" : 5800,
-    "weight" : 91.6
-  },
-  {
-    "alcohol" : false,
-    "alcoholComment" : "",
-    "badFood" : false,
-    "badFoodComment" : "",
-    "date" : "2025-11-03T21:00:00Z",
-    "id" : "FA3C1AA2-3A18-4647-8516-14CEED5E2CB6",
-    "smoking" : false,
-    "smokingComment" : "",
-    "sport" : true,
-    "sportComment" : "",
-    "sportType" : "Подтягивания",
-    "steps" : 3800,
-    "trainingExercises" : [
-      {
-        "id" : "CD69A552-155F-4D47-92EC-8A4B3AE96445",
-        "metric" : "reps",
-        "name" : "Негативы",
-        "restSeconds" : 120,
-        "sets" : 1,
-        "values" : [
-          2
-        ]
-      }
-    ],
-    "weight" : 91.8
-  },
-  {
-    "alcohol" : false,
-    "alcoholComment" : "",
-    "badFood" : false,
-    "badFoodComment" : "",
-    "date" : "2025-11-05T21:00:00Z",
-    "id" : "519A0A22-1C2B-4956-803C-8E8A865CE4B7",
-    "smoking" : false,
-    "smokingComment" : "",
-    "sport" : false,
-    "sportComment" : "",
-    "steps" : 7500,
-    "weight" : 91.6
-  },
-  {
-    "alcohol" : true,
-    "alcoholComment" : "Босаневское состояние",
-    "badFood" : false,
-    "badFoodComment" : "",
-    "date" : "2025-11-05T21:00:00Z",
-    "id" : "21DFC216-8ECC-4214-BC62-17C08EDF651A",
-    "smoking" : true,
-    "smokingComment" : "0,5 бут до вина",
-    "sport" : true,
-    "sportComment" : "",
-    "sportType" : "Подтягивания",
-    "steps" : 0,
-    "weight" : 92
-  },
-  {
-    "alcohol" : true,
-    "alcoholComment" : "Блюм, с мясо",
-    "badFood" : true,
-    "badFoodComment" : "Умен 1В самолётной еді",
-    "date" : "2025-11-06T21:00:00Z",
-    "id" : "BDB6FA19-4038-4C57-A777-BC8ADE3B7B80",
-    "smoking" : false,
-    "smokingComment" : "",
-    "sport" : false,
-    "sportComment" : "",
-    "steps" : 4300,
-    "weight" : 90.8
-  },
-  {
-    "alcohol" : true,
-    "alcoholComment" : "Болгер джем, Араклов смагліни",
-    "badFood" : true,
-    "badFoodComment" : "Меню Турції",
-    "date" : "2025-11-07T21:00:00Z",
-    "id" : "99334034-4DEA-46DC-ABBA-ADA881785012",
-    "smoking" : true,
-    "smokingComment" : "З раза",
-    "sport" : false,
-    "sportComment" : "",
-    "steps" : 6800
-  },
-  {
-    "alcohol" : true,
-    "alcoholComment" : "Араклов обед, самаклова ужин",
-    "badFood" : true,
-    "badFoodComment" : "Меню Турції",
-    "date" : "2025-11-09T21:00:00Z",
-    "id" : "0A54DEF7-BD31-4A72-936C-2335715B190A",
-    "smoking" : false,
-    "smokingComment" : "",
-    "sport" : false,
-    "sportComment" : "",
-    "steps" : 8800
-  },
-  {
-    "alcohol" : true,
-    "alcoholComment" : "До вино 1,5",
-    "badFood" : true,
-    "badFoodComment" : "На брошен",
-    "date" : "2025-11-11T21:00:00Z",
-    "id" : "D495FE9C-2C65-4B06-9F2F-51FB91A56691",
-    "smoking" : false,
-    "smokingComment" : "",
-    "sport" : false,
-    "sportComment" : "",
-    "steps" : 600
-  },
-  {
-    "alcohol" : false,
-    "alcoholComment" : "",
-    "badFood" : false,
-    "badFoodComment" : "",
-    "date" : "2025-11-12T21:00:00Z",
-    "id" : "C7D399D0-9373-463E-9EE1-7A8024489C68",
-    "smoking" : false,
-    "smokingComment" : "",
-    "sport" : false,
-    "sportComment" : "",
-    "steps" : 3000
-  },
-  {
-    "alcohol" : true,
-    "alcoholComment" : "Песаніє",
-    "badFood" : false,
-    "badFoodComment" : "",
-    "date" : "2025-11-13T21:00:00Z",
-    "id" : "4F60B6EB-904D-4060-BFE3-9DF5AF022AE5",
-    "smoking" : false,
-    "smokingComment" : "",
-    "sport" : false,
-    "sportComment" : "",
-    "steps" : 13000,
-    "weight" : 90.8
-  },
-  {
-    "alcohol" : false,
-    "alcoholComment" : "",
-    "badFood" : false,
-    "badFoodComment" : "",
-    "date" : "2025-11-14T21:00:00Z",
-    "id" : "92492F96-DECE-48F4-A585-2869C025E2A5",
-    "smoking" : false,
-    "smokingComment" : "",
-    "sport" : false,
-    "sportComment" : "",
-    "steps" : 12000
-  },
-  {
-    "alcohol" : false,
-    "alcoholComment" : "",
-    "badFood" : false,
-    "badFoodComment" : "",
-    "date" : "2025-11-15T21:00:00Z",
-    "id" : "F36D09A7-5359-4722-A00F-A6CD2922B92F",
-    "smoking" : false,
-    "smokingComment" : "",
-    "sport" : false,
-    "sportComment" : "",
-    "steps" : 8000,
-    "weight" : 90.5
-  },
-  {
-    "alcohol" : false,
-    "alcoholComment" : "",
-    "badFood" : false,
-    "badFoodComment" : "",
-    "date" : "2025-11-16T21:00:00Z",
-    "id" : "1B432BF6-777D-4523-B4D6-B123FA2D935B",
-    "smoking" : false,
-    "smokingComment" : "",
-    "sport" : true,
-    "sportComment" : "",
-    "sportType" : "Подтягивания",
-    "steps" : 0,
-    "trainingExercises" : [
-      {
-        "id" : "4B201BB4-7C5C-4CC5-9A32-C8A575A3443E",
-        "metric" : "reps",
-        "name" : "Негативы",
-        "restSeconds" : 120,
-        "sets" : 1,
-        "values" : [
-          2
-        ]
-      }
-    ],
-    "weight" : 89.7
-  },
-  {
-    "alcohol" : false,
-    "alcoholComment" : "",
-    "badFood" : false,
-    "badFoodComment" : "",
-    "date" : "2025-11-17T21:00:00Z",
-    "id" : "43070219-6013-47EC-B03B-89FDE8AB03FF",
-    "smoking" : false,
-    "smokingComment" : "",
-    "sport" : false,
-    "sportComment" : "",
-    "steps" : 3000,
-    "weight" : 89.6
-  },
-  {
-    "alcohol" : false,
-    "alcoholComment" : "",
-    "badFood" : false,
-    "badFoodComment" : "",
-    "date" : "2025-11-18T21:00:00Z",
-    "id" : "AF6BDF13-A8FD-4682-9E8F-AED3D64D995C",
-    "smoking" : false,
-    "smokingComment" : "",
-    "sport" : true,
-    "sportComment" : "",
-    "sportType" : "Отжимания",
-    "steps" : 0,
-    "weight" : 89.5
-  },
-  {
-    "alcohol" : true,
-    "alcoholComment" : "С неми джем",
-    "badFood" : true,
-    "badFoodComment" : "Шахріли на обед",
-    "date" : "2025-11-19T21:00:00Z",
-    "id" : "74BF8B21-EEA9-40AD-B111-4034904CC728",
-    "smoking" : false,
-    "smokingComment" : "",
-    "sport" : true,
-    "sportComment" : "",
-    "sportType" : "Подтягивания",
-    "steps" : 400,
-    "weight" : 89.1
-  },
-  {
-    "alcohol" : false,
-    "alcoholComment" : "",
-    "badFood" : true,
-    "badFoodComment" : "Дражити, підстілан ужин",
-    "date" : "2025-11-20T21:00:00Z",
-    "id" : "F292776B-BFA2-48D7-998D-22F8430B1B5B",
-    "smoking" : false,
-    "smokingComment" : "",
-    "sport" : true,
-    "sportComment" : "",
-    "sportType" : "Отжимания",
-    "steps" : 7500,
-    "weight" : 88.6
-  },
-  {
-    "alcohol" : true,
-    "alcoholComment" : "Блюм, 4 пива",
-    "badFood" : true,
-    "badFoodComment" : "Шоча вдруга рез пітінан",
-    "date" : "2025-11-21T21:00:00Z",
-    "id" : "DD4FBE1A-A617-4DEF-A40F-4C3CC4385261",
-    "smoking" : false,
-    "smokingComment" : "",
-    "sport" : false,
-    "sportComment" : "",
-    "steps" : 8800,
-    "weight" : 88.9
-  },
-  {
-    "alcohol" : false,
-    "alcoholComment" : "",
-    "badFood" : false,
-    "badFoodComment" : "",
-    "date" : "2025-11-22T21:00:00Z",
-    "id" : "EB41F373-9D86-42D7-9CC6-70415B2FF098",
-    "smoking" : false,
-    "smokingComment" : "",
-    "sport" : false,
-    "sportComment" : "",
-    "steps" : 9000,
-    "weight" : 89
-  },
-  {
-    "alcohol" : false,
-    "alcoholComment" : "",
-    "badFood" : false,
-    "badFoodComment" : "",
-    "date" : "2025-11-24T21:00:00Z",
-    "id" : "871C6108-FE91-438A-8FEB-175B62ECACE6",
-    "smoking" : false,
-    "smokingComment" : "",
-    "sport" : false,
-    "sportComment" : "",
-    "steps" : 3250,
-    "weight" : 88.1
-  },
-  {
-    "alcohol" : false,
-    "alcoholComment" : "",
-    "badFood" : false,
-    "badFoodComment" : "",
-    "date" : "2025-11-25T21:00:00Z",
-    "id" : "4E67BCD0-7F95-4988-8429-88DF9BC57738",
-    "smoking" : false,
-    "smokingComment" : "",
-    "sport" : true,
-    "sportComment" : "",
-    "sportType" : "Отжимания",
-    "steps" : 3250,
-    "weight" : 89.7
-  },
-  {
-    "alcohol" : false,
-    "alcoholComment" : "",
-    "badFood" : false,
-    "badFoodComment" : "",
-    "date" : "2025-11-26T21:00:00Z",
-    "id" : "05195D10-D147-4B54-A846-6931B7862E0C",
-    "smoking" : false,
-    "smokingComment" : "",
-    "sport" : false,
-    "sportComment" : "",
-    "sportType" : "",
-    "steps" : 2000,
-    "weight" : 89.1
-  },
-  {
-    "alcohol" : false,
-    "alcoholComment" : "",
-    "badFood" : false,
-    "badFoodComment" : "",
-    "date" : "2025-11-27T21:00:00Z",
-    "id" : "6C851609-05AA-4C09-B931-E733CFDC88E9",
-    "smoking" : false,
-    "smokingComment" : "",
-    "sport" : true,
-    "sportComment" : "Подтягивания",
-    "steps" : 5800,
-    "weight" : 89.1
-  },
-  {
-    "alcohol" : true,
-    "alcoholComment" : "Пиво+Виски",
-    "badFood" : true,
-    "badFoodComment" : "В баре, ДР Рогожникова",
-    "date" : "2025-11-28T21:00:00Z",
-    "id" : "291C5450-2CD7-4BB0-B925-F71E7AC6CB84",
-    "smoking" : true,
-    "smokingComment" : "",
-    "sport" : true,
-    "sportComment" : "Отжимания",
-    "steps" : 6000,
-    "weight" : 88.8
-  },
-  {
-    "alcohol" : true,
-    "alcoholComment" : "Пиво утром, вино на обед и ужин, ДР Даши",
-    "badFood" : true,
-    "badFoodComment" : "Чипсы",
-    "date" : "2025-11-29T21:00:00Z",
-    "id" : "210440F1-4408-444F-B77E-1F483E828B66",
-    "smoking" : true,
-    "smokingComment" : "в обед с вином",
-    "sport" : false,
-    "sportComment" : "",
-    "steps" : 2000,
-    "weight" : 89.8
-  }
-]
+{
+  "schema_version": 1,
+  "source": "Тренировки.xlsx",
+  "generated_at": "2025-12-03T09:53:18.906519Z",
+  "days": [
+    {
+      "date": "2025-10-13",
+      "weight_kg": 92.6,
+      "weight_raw": "92.6",
+      "junk_food": "Чипсы на ночь!",
+      "alcohol": "3 пива, 2 вина",
+      "hookah": null,
+      "aerobic_steps": 2500,
+      "training_type": "pushups",
+      "training_id": "2025-10-13-pushups"
+    },
+    {
+      "date": "2025-10-14",
+      "weight_kg": 92.4,
+      "weight_raw": "92.4",
+      "junk_food": null,
+      "alcohol": null,
+      "hookah": null,
+      "aerobic_steps": 3500,
+      "training_type": "pullups",
+      "training_id": "2025-10-14-pullups"
+    },
+    {
+      "date": "2025-10-15",
+      "weight_kg": 92.8,
+      "weight_raw": "92.8",
+      "junk_food": null,
+      "alcohol": null,
+      "hookah": null,
+      "aerobic_steps": 4500,
+      "training_type": "rest",
+      "training_id": null
+    },
+    {
+      "date": "2025-10-16",
+      "weight_kg": 92.1,
+      "weight_raw": "92.1",
+      "junk_food": null,
+      "alcohol": "3 пива + виски",
+      "hookah": null,
+      "aerobic_steps": 4500,
+      "training_type": "pushups",
+      "training_id": "2025-10-16-pushups"
+    },
+    {
+      "date": "2025-10-17",
+      "weight_kg": 93.5,
+      "weight_raw": "93.5",
+      "junk_food": null,
+      "alcohol": "2 пива + виски",
+      "hookah": null,
+      "aerobic_steps": 3650,
+      "training_type": null,
+      "training_id": null
+    },
+    {
+      "date": "2025-10-18",
+      "weight_kg": 92.9,
+      "weight_raw": "92.9",
+      "junk_food": null,
+      "alcohol": null,
+      "hookah": null,
+      "aerobic_steps": 2000,
+      "training_type": null,
+      "training_id": null
+    },
+    {
+      "date": "2025-10-19",
+      "weight_kg": 92.7,
+      "weight_raw": "92.7",
+      "junk_food": null,
+      "alcohol": null,
+      "hookah": null,
+      "aerobic_steps": 1000,
+      "training_type": null,
+      "training_id": null
+    },
+    {
+      "date": "2025-10-20",
+      "weight_kg": 92.5,
+      "weight_raw": "92.5",
+      "junk_food": null,
+      "alcohol": "Красное вино",
+      "hookah": "Дома, ночью",
+      "aerobic_steps": 5800,
+      "training_type": "mixed",
+      "training_id": "2025-10-20-mixed"
+    },
+    {
+      "date": "2025-10-21",
+      "weight_kg": 91.4,
+      "weight_raw": "91.4",
+      "junk_food": "Чипсы днем",
+      "alcohol": "Пиво",
+      "hookah": "Днем, в меру",
+      "aerobic_steps": 2000,
+      "training_type": "mixed",
+      "training_id": "2025-10-21-mixed"
+    },
+    {
+      "date": "2025-10-22",
+      "weight_kg": 93.2,
+      "weight_raw": "93.2",
+      "junk_food": null,
+      "alcohol": null,
+      "hookah": null,
+      "aerobic_steps": 3000,
+      "training_type": "rest",
+      "training_id": null
+    },
+    {
+      "date": "2025-10-23",
+      "weight_kg": 92.6,
+      "weight_raw": "92.6",
+      "junk_food": null,
+      "alcohol": null,
+      "hookah": "У Липата с чаем",
+      "aerobic_steps": 4600,
+      "training_type": "pushups",
+      "training_id": "2025-10-23-pushups"
+    },
+    {
+      "date": "2025-10-24",
+      "weight_kg": 92.1,
+      "weight_raw": "92.1",
+      "junk_food": null,
+      "alcohol": null,
+      "hookah": null,
+      "aerobic_steps": 6500,
+      "training_type": null,
+      "training_id": null
+    },
+    {
+      "date": "2025-10-25",
+      "weight_kg": 91.5,
+      "weight_raw": "91.5",
+      "junk_food": "Пицца в обед, без ужина",
+      "alcohol": null,
+      "hookah": null,
+      "aerobic_steps": 2000,
+      "training_type": null,
+      "training_id": null
+    },
+    {
+      "date": "2025-10-26",
+      "weight_kg": 91.7,
+      "weight_raw": "91.7",
+      "junk_food": null,
+      "alcohol": null,
+      "hookah": null,
+      "aerobic_steps": 3000,
+      "training_type": null,
+      "training_id": null
+    },
+    {
+      "date": "2025-10-27",
+      "weight_kg": 91.7,
+      "weight_raw": "91.7",
+      "junk_food": null,
+      "alcohol": null,
+      "hookah": null,
+      "aerobic_steps": 6800,
+      "training_type": "pushups",
+      "training_id": "2025-10-27-pushups"
+    },
+    {
+      "date": "2025-10-28",
+      "weight_kg": 91.5,
+      "weight_raw": "91.5",
+      "junk_food": null,
+      "alcohol": "3 пива + виски",
+      "hookah": null,
+      "aerobic_steps": 6000,
+      "training_type": "mixed",
+      "training_id": "2025-10-28-mixed"
+    },
+    {
+      "date": "2025-10-29",
+      "weight_kg": 91.4,
+      "weight_raw": "91.4",
+      "junk_food": "Штуки в баре!",
+      "alcohol": "6 пива",
+      "hookah": null,
+      "aerobic_steps": 3500,
+      "training_type": null,
+      "training_id": null
+    },
+    {
+      "date": "2025-10-30",
+      "weight_kg": 92.5,
+      "weight_raw": "92.5",
+      "junk_food": "Штуки в баре!",
+      "alcohol": "6 пива, ДР Турик",
+      "hookah": null,
+      "aerobic_steps": 3500,
+      "training_type": null,
+      "training_id": null
+    },
+    {
+      "date": "2025-10-31",
+      "weight_kg": 92.5,
+      "weight_raw": "92.5",
+      "junk_food": null,
+      "alcohol": null,
+      "hookah": null,
+      "aerobic_steps": 7500,
+      "training_type": null,
+      "training_id": null
+    },
+    {
+      "date": "2025-11-01",
+      "weight_kg": 92.3,
+      "weight_raw": "92.3",
+      "junk_food": null,
+      "alcohol": null,
+      "hookah": null,
+      "aerobic_steps": 7900,
+      "training_type": "pushups",
+      "training_id": "2025-11-01-pushups"
+    },
+    {
+      "date": "2025-11-02",
+      "weight_kg": 92.1,
+      "weight_raw": "92.1",
+      "junk_food": null,
+      "alcohol": null,
+      "hookah": null,
+      "aerobic_steps": 13500,
+      "training_type": "mixed",
+      "training_id": "2025-11-02-mixed"
+    },
+    {
+      "date": "2025-11-03",
+      "weight_kg": 91.9,
+      "weight_raw": "91.9",
+      "junk_food": "Чипсы днем, торт и рулет",
+      "alcohol": null,
+      "hookah": null,
+      "aerobic_steps": 5800,
+      "training_type": "pushups",
+      "training_id": "2025-11-03-pushups"
+    },
+    {
+      "date": "2025-11-04",
+      "weight_kg": 91.6,
+      "weight_raw": "91.6",
+      "junk_food": null,
+      "alcohol": null,
+      "hookah": null,
+      "aerobic_steps": 3000,
+      "training_type": "pullups",
+      "training_id": "2025-11-04-pullups"
+    },
+    {
+      "date": "2025-11-05",
+      "weight_kg": 91.6,
+      "weight_raw": "91.6",
+      "junk_food": null,
+      "alcohol": null,
+      "hookah": null,
+      "aerobic_steps": 7500,
+      "training_type": null,
+      "training_id": null
+    },
+    {
+      "date": "2025-11-06",
+      "weight_kg": 91.7,
+      "weight_raw": "91.7",
+      "junk_food": null,
+      "alcohol": null,
+      "hookah": null,
+      "aerobic_steps": 5800,
+      "training_type": "pushups",
+      "training_id": "2025-11-06-pushups"
+    },
+    {
+      "date": "2025-11-07",
+      "weight_kg": 90.8,
+      "weight_raw": "90.8",
+      "junk_food": "Ужин 18: самолетная еда",
+      "alcohol": "2 пива + ягер",
+      "hookah": null,
+      "aerobic_steps": 4800,
+      "training_type": null,
+      "training_id": null
+    },
+    {
+      "date": "2025-11-08",
+      "weight_kg": null,
+      "weight_raw": "Мото Турция",
+      "junk_food": "Бургер днем, арахис вечером",
+      "alcohol": "3 пива",
+      "hookah": null,
+      "aerobic_steps": 4100,
+      "training_type": "mixed",
+      "training_id": "2025-11-08-mixed"
+    },
+    {
+      "date": "2025-11-09",
+      "weight_kg": null,
+      "weight_raw": "Мото Турция",
+      "junk_food": null,
+      "alcohol": null,
+      "hookah": null,
+      "aerobic_steps": 6500,
+      "training_type": "mixed",
+      "training_id": "2025-11-09-mixed"
+    },
+    {
+      "date": "2025-11-10",
+      "weight_kg": null,
+      "weight_raw": "Мото Турция",
+      "junk_food": null,
+      "alcohol": null,
+      "hookah": null,
+      "aerobic_steps": 8500,
+      "training_type": "mixed",
+      "training_id": "2025-11-10-mixed"
+    },
+    {
+      "date": "2025-11-11",
+      "weight_kg": null,
+      "weight_raw": "Мото Турция",
+      "junk_food": "Плотный ужин с хлебом",
+      "alcohol": null,
+      "hookah": null,
+      "aerobic_steps": 10800,
+      "training_type": "mixed",
+      "training_id": "2025-11-11-mixed"
+    },
+    {
+      "date": "2025-11-12",
+      "weight_kg": null,
+      "weight_raw": "Мото Турция",
+      "junk_food": "Ягненок шашлык и зелень",
+      "alcohol": "0,5 бут кр вина",
+      "hookah": null,
+      "aerobic_steps": 4800,
+      "training_type": "mixed",
+      "training_id": "2025-11-12-mixed"
+    },
+    {
+      "date": "2025-11-13",
+      "weight_kg": null,
+      "weight_raw": "Мото Турция",
+      "junk_food": null,
+      "alcohol": null,
+      "hookah": null,
+      "aerobic_steps": 3000,
+      "training_type": "mixed",
+      "training_id": "2025-11-13-mixed"
+    },
+    {
+      "date": "2025-11-14",
+      "weight_kg": null,
+      "weight_raw": "Мото Турция",
+      "junk_food": "Аэрлпорт обед, самолет ужин",
+      "alcohol": null,
+      "hookah": null,
+      "aerobic_steps": 13000,
+      "training_type": "mixed",
+      "training_id": "2025-11-14-mixed"
+    },
+    {
+      "date": "2025-11-15",
+      "weight_kg": 90.9,
+      "weight_raw": "90.9",
+      "junk_food": null,
+      "alcohol": null,
+      "hookah": null,
+      "aerobic_steps": 6000,
+      "training_type": null,
+      "training_id": null
+    },
+    {
+      "date": "2025-11-16",
+      "weight_kg": 90.5,
+      "weight_raw": "90.5",
+      "junk_food": null,
+      "alcohol": null,
+      "hookah": null,
+      "aerobic_steps": 8000,
+      "training_type": null,
+      "training_id": null
+    },
+    {
+      "date": "2025-11-17",
+      "weight_kg": 89.7,
+      "weight_raw": "89.7",
+      "junk_food": "Болезненное состояние",
+      "alcohol": null,
+      "hookah": null,
+      "aerobic_steps": 2000,
+      "training_type": "pullups",
+      "training_id": "2025-11-17-pullups"
+    },
+    {
+      "date": "2025-11-18",
+      "weight_kg": 89.4,
+      "weight_raw": "89.4",
+      "junk_food": null,
+      "alcohol": null,
+      "hookah": null,
+      "aerobic_steps": 3000,
+      "training_type": "pushups",
+      "training_id": "2025-11-18-pushups"
+    },
+    {
+      "date": "2025-11-19",
+      "weight_kg": 89.1,
+      "weight_raw": "89.1",
+      "junk_food": null,
+      "alcohol": null,
+      "hookah": null,
+      "aerobic_steps": 8000,
+      "training_type": null,
+      "training_id": null
+    },
+    {
+      "date": "2025-11-20",
+      "weight_kg": 89.1,
+      "weight_raw": "89.1",
+      "junk_food": "Шаурма на обед",
+      "alcohol": null,
+      "hookah": "С чаем днем",
+      "aerobic_steps": 2000,
+      "training_type": "pullups",
+      "training_id": "2025-11-20-pullups"
+    },
+    {
+      "date": "2025-11-21",
+      "weight_kg": 88.8,
+      "weight_raw": "88.8",
+      "junk_food": "Драники, плотный ужин",
+      "alcohol": null,
+      "hookah": null,
+      "aerobic_steps": 8500,
+      "training_type": "pushups",
+      "training_id": "2025-11-21-pushups"
+    },
+    {
+      "date": "2025-11-22",
+      "weight_kg": 89.2,
+      "weight_raw": "89.2",
+      "junk_food": "Чипсы на ночь! ДР мамы",
+      "alcohol": "1 вино, 4 пива",
+      "hookah": null,
+      "aerobic_steps": 2000,
+      "training_type": null,
+      "training_id": null
+    },
+    {
+      "date": "2025-11-23",
+      "weight_kg": 89.9,
+      "weight_raw": "89.9",
+      "junk_food": null,
+      "alcohol": "2 пива дома",
+      "hookah": null,
+      "aerobic_steps": 9000,
+      "training_type": null,
+      "training_id": null
+    },
+    {
+      "date": "2025-11-24",
+      "weight_kg": 90.2,
+      "weight_raw": "90.2",
+      "junk_food": null,
+      "alcohol": null,
+      "hookah": null,
+      "aerobic_steps": 2000,
+      "training_type": null,
+      "training_id": null
+    },
+    {
+      "date": "2025-11-25",
+      "weight_kg": 89.7,
+      "weight_raw": "89.7",
+      "junk_food": null,
+      "alcohol": null,
+      "hookah": null,
+      "aerobic_steps": 3250,
+      "training_type": "pushups",
+      "training_id": "2025-11-25-pushups"
+    },
+    {
+      "date": "2025-11-26",
+      "weight_kg": 89.1,
+      "weight_raw": "89.1",
+      "junk_food": null,
+      "alcohol": null,
+      "hookah": null,
+      "aerobic_steps": 2000,
+      "training_type": null,
+      "training_id": null
+    },
+    {
+      "date": "2025-11-27",
+      "weight_kg": 89.1,
+      "weight_raw": "89.1",
+      "junk_food": null,
+      "alcohol": null,
+      "hookah": null,
+      "aerobic_steps": 5800,
+      "training_type": "pullups",
+      "training_id": "2025-11-27-pullups"
+    },
+    {
+      "date": "2025-11-28",
+      "weight_kg": 88.8,
+      "weight_raw": "88.8",
+      "junk_food": "Бар! ДР Жени",
+      "alcohol": "3 пива + виски",
+      "hookah": null,
+      "aerobic_steps": 6000,
+      "training_type": "pushups",
+      "training_id": "2025-11-28-pushups"
+    },
+    {
+      "date": "2025-11-29",
+      "weight_kg": null,
+      "weight_raw": "На бронной",
+      "junk_food": "Чипсы утром. ДР Даши",
+      "alcohol": "Кр вино 2 бут",
+      "hookah": null,
+      "aerobic_steps": 2000,
+      "training_type": null,
+      "training_id": null
+    },
+    {
+      "date": "2025-11-30",
+      "weight_kg": 90.9,
+      "weight_raw": "90.9",
+      "junk_food": null,
+      "alcohol": "4 пива + 1 бокал",
+      "hookah": null,
+      "aerobic_steps": 1200,
+      "training_type": null,
+      "training_id": null
+    },
+    {
+      "date": "2025-12-01",
+      "weight_kg": 90.9,
+      "weight_raw": "90.9",
+      "junk_food": null,
+      "alcohol": null,
+      "hookah": null,
+      "aerobic_steps": 3000,
+      "training_type": null,
+      "training_id": null
+    },
+    {
+      "date": "2025-12-02",
+      "weight_kg": 90.3,
+      "weight_raw": "90.3",
+      "junk_food": null,
+      "alcohol": null,
+      "hookah": null,
+      "aerobic_steps": 1200,
+      "training_type": "mixed",
+      "training_id": "2025-12-02-mixed"
+    },
+    {
+      "date": "2025-12-03",
+      "weight_kg": 89.7,
+      "weight_raw": "89.7",
+      "junk_food": null,
+      "alcohol": null,
+      "hookah": null,
+      "aerobic_steps": null,
+      "training_type": null,
+      "training_id": null
+    }
+  ],
+  "trainings": [
+    {
+      "id": "2025-10-13-pushups",
+      "date": "2025-10-13",
+      "type": "pushups",
+      "exercises": [
+        {
+          "raw": "17х3 (пол, 90)",
+          "name": "пол",
+          "values": [
+            17,
+            3
+          ],
+          "sets": 2,
+          "rest_sec": 90,
+          "unit": "reps"
+        },
+        {
+          "raw": "9х2 (задержка, 120",
+          "name": "задержка",
+          "values": [
+            9,
+            2
+          ],
+          "sets": 2,
+          "rest_sec": null,
+          "unit": "reps"
+        },
+        {
+          "raw": "13х2 (ноги выше, 90)",
+          "name": "ноги выше",
+          "values": [
+            13,
+            2
+          ],
+          "sets": 2,
+          "rest_sec": 90,
+          "unit": "reps"
+        },
+        {
+          "raw": "15 (максимум)",
+          "name": "максимум",
+          "values": [
+            15
+          ],
+          "sets": 1,
+          "rest_sec": null,
+          "unit": "reps"
+        }
+      ]
+    },
+    {
+      "id": "2025-10-14-pullups",
+      "date": "2025-10-14",
+      "type": "pullups",
+      "exercises": [
+        {
+          "raw": "15х3 (вис, 90)",
+          "name": "вис",
+          "values": [
+            15,
+            3
+          ],
+          "sets": 2,
+          "rest_sec": 90,
+          "unit": "sec"
+        },
+        {
+          "raw": "10 10 13 (австр, 120)",
+          "name": "австр",
+          "values": [
+            10,
+            10,
+            13
+          ],
+          "sets": 3,
+          "rest_sec": 120,
+          "unit": "reps"
+        },
+        {
+          "raw": "3х3х3 (негатив, 180)",
+          "name": "негатив",
+          "values": [
+            3,
+            3,
+            3
+          ],
+          "sets": 3,
+          "rest_sec": 180,
+          "unit": "reps"
+        }
+      ]
+    },
+    {
+      "id": "2025-10-16-pushups",
+      "date": "2025-10-16",
+      "type": "pushups",
+      "exercises": [
+        {
+          "raw": "17х3 (пол, 90)",
+          "name": "пол",
+          "values": [
+            17,
+            3
+          ],
+          "sets": 2,
+          "rest_sec": 90,
+          "unit": "reps"
+        },
+        {
+          "raw": "9х2 (задержка, 120",
+          "name": "задержка",
+          "values": [
+            9,
+            2
+          ],
+          "sets": 2,
+          "rest_sec": null,
+          "unit": "reps"
+        },
+        {
+          "raw": "13х2 (ноги выше, 90)",
+          "name": "ноги выше",
+          "values": [
+            13,
+            2
+          ],
+          "sets": 2,
+          "rest_sec": 90,
+          "unit": "reps"
+        },
+        {
+          "raw": "15 (максимум)",
+          "name": "максимум",
+          "values": [
+            15
+          ],
+          "sets": 1,
+          "rest_sec": null,
+          "unit": "reps"
+        }
+      ]
+    },
+    {
+      "id": "2025-10-20-mixed",
+      "date": "2025-10-20",
+      "type": "mixed",
+      "exercises": [
+        {
+          "raw": "17х3 (пол, 90)",
+          "name": "пол",
+          "values": [
+            17,
+            3
+          ],
+          "sets": 2,
+          "rest_sec": 90,
+          "unit": "reps"
+        },
+        {
+          "raw": "9х2 (задержка, 120",
+          "name": "задержка",
+          "values": [
+            9,
+            2
+          ],
+          "sets": 2,
+          "rest_sec": null,
+          "unit": "reps"
+        },
+        {
+          "raw": "13х2 (ноги выше, 90)",
+          "name": "ноги выше",
+          "values": [
+            13,
+            2
+          ],
+          "sets": 2,
+          "rest_sec": 90,
+          "unit": "reps"
+        },
+        {
+          "raw": "15 (максимум)",
+          "name": "максимум",
+          "values": [
+            15
+          ],
+          "sets": 1,
+          "rest_sec": null,
+          "unit": "reps"
+        }
+      ]
+    },
+    {
+      "id": "2025-10-21-mixed",
+      "date": "2025-10-21",
+      "type": "mixed",
+      "exercises": []
+    },
+    {
+      "id": "2025-10-23-pushups",
+      "date": "2025-10-23",
+      "type": "pushups",
+      "exercises": [
+        {
+          "raw": "17х4 (пол, 90)",
+          "name": "пол",
+          "values": [
+            17,
+            4
+          ],
+          "sets": 2,
+          "rest_sec": 90,
+          "unit": "reps"
+        },
+        {
+          "raw": "10х1 (задержка, 120",
+          "name": "задержка",
+          "values": [
+            10,
+            1
+          ],
+          "sets": 2,
+          "rest_sec": null,
+          "unit": "reps"
+        },
+        {
+          "raw": "13х2 (ноги выше, 90)",
+          "name": "ноги выше",
+          "values": [
+            13,
+            2
+          ],
+          "sets": 2,
+          "rest_sec": 90,
+          "unit": "reps"
+        },
+        {
+          "raw": "17 (максимум)",
+          "name": "максимум",
+          "values": [
+            17
+          ],
+          "sets": 1,
+          "rest_sec": null,
+          "unit": "reps"
+        }
+      ]
+    },
+    {
+      "id": "2025-10-27-pushups",
+      "date": "2025-10-27",
+      "type": "pushups",
+      "exercises": [
+        {
+          "raw": "18х3 (пол, 90)",
+          "name": "пол",
+          "values": [
+            18,
+            3
+          ],
+          "sets": 2,
+          "rest_sec": 90,
+          "unit": "reps"
+        },
+        {
+          "raw": "10х2 (задержка, 120)",
+          "name": "задержка",
+          "values": [
+            10,
+            2
+          ],
+          "sets": 2,
+          "rest_sec": 120,
+          "unit": "reps"
+        },
+        {
+          "raw": "14х2 (ноги выше, 90)",
+          "name": "ноги выше",
+          "values": [
+            14,
+            2
+          ],
+          "sets": 2,
+          "rest_sec": 90,
+          "unit": "reps"
+        },
+        {
+          "raw": "14 (максимум)",
+          "name": "максимум",
+          "values": [
+            14
+          ],
+          "sets": 1,
+          "rest_sec": null,
+          "unit": "reps"
+        }
+      ]
+    },
+    {
+      "id": "2025-10-28-mixed",
+      "date": "2025-10-28",
+      "type": "mixed",
+      "exercises": [
+        {
+          "raw": "40 минут, 6,5 км",
+          "name": null,
+          "values": [
+            40,
+            6,
+            5
+          ],
+          "sets": 3,
+          "rest_sec": null,
+          "unit": "reps"
+        }
+      ]
+    },
+    {
+      "id": "2025-11-01-pushups",
+      "date": "2025-11-01",
+      "type": "pushups",
+      "exercises": [
+        {
+          "raw": "46 раз, максимум",
+          "name": null,
+          "values": [
+            46
+          ],
+          "sets": 1,
+          "rest_sec": null,
+          "unit": "reps"
+        }
+      ]
+    },
+    {
+      "id": "2025-11-02-mixed",
+      "date": "2025-11-02",
+      "type": "mixed",
+      "exercises": []
+    },
+    {
+      "id": "2025-11-03-pushups",
+      "date": "2025-11-03",
+      "type": "pushups",
+      "exercises": [
+        {
+          "raw": "18х3 (пол, 90)",
+          "name": "пол",
+          "values": [
+            18,
+            3
+          ],
+          "sets": 2,
+          "rest_sec": 90,
+          "unit": "reps"
+        },
+        {
+          "raw": "10, 9 (задержка, 120)",
+          "name": "задержка",
+          "values": [
+            10,
+            9
+          ],
+          "sets": 2,
+          "rest_sec": 120,
+          "unit": "reps"
+        },
+        {
+          "raw": "14,10 (ноги выше, 90)",
+          "name": "ноги выше",
+          "values": [
+            14,
+            10
+          ],
+          "sets": 2,
+          "rest_sec": 90,
+          "unit": "reps"
+        },
+        {
+          "raw": "14 (максимум)",
+          "name": "максимум",
+          "values": [
+            14
+          ],
+          "sets": 1,
+          "rest_sec": null,
+          "unit": "reps"
+        }
+      ]
+    },
+    {
+      "id": "2025-11-04-pullups",
+      "date": "2025-11-04",
+      "type": "pullups",
+      "exercises": [
+        {
+          "raw": "15х3 (вис, 90)",
+          "name": "вис",
+          "values": [
+            15,
+            3
+          ],
+          "sets": 2,
+          "rest_sec": 90,
+          "unit": "sec"
+        },
+        {
+          "raw": "10 10 15 (австр, 120)",
+          "name": "австр",
+          "values": [
+            10,
+            10,
+            15
+          ],
+          "sets": 3,
+          "rest_sec": 120,
+          "unit": "reps"
+        },
+        {
+          "raw": "3х3х1!! (негатив, 180)",
+          "name": "негатив",
+          "values": [
+            3,
+            3,
+            1
+          ],
+          "sets": 3,
+          "rest_sec": 180,
+          "unit": "reps"
+        }
+      ]
+    },
+    {
+      "id": "2025-11-06-pushups",
+      "date": "2025-11-06",
+      "type": "pushups",
+      "exercises": [
+        {
+          "raw": "18х3 (пол, 90)",
+          "name": "пол",
+          "values": [
+            18,
+            3
+          ],
+          "sets": 2,
+          "rest_sec": 90,
+          "unit": "reps"
+        },
+        {
+          "raw": "10х2 (задержка, 120)",
+          "name": "задержка",
+          "values": [
+            10,
+            2
+          ],
+          "sets": 2,
+          "rest_sec": 120,
+          "unit": "reps"
+        },
+        {
+          "raw": "14х2 (ноги выше, 90)",
+          "name": "ноги выше",
+          "values": [
+            14,
+            2
+          ],
+          "sets": 2,
+          "rest_sec": 90,
+          "unit": "reps"
+        },
+        {
+          "raw": "20 (максимум)",
+          "name": "максимум",
+          "values": [
+            20
+          ],
+          "sets": 1,
+          "rest_sec": null,
+          "unit": "reps"
+        }
+      ]
+    },
+    {
+      "id": "2025-11-08-mixed",
+      "date": "2025-11-08",
+      "type": "mixed",
+      "exercises": []
+    },
+    {
+      "id": "2025-11-09-mixed",
+      "date": "2025-11-09",
+      "type": "mixed",
+      "exercises": []
+    },
+    {
+      "id": "2025-11-10-mixed",
+      "date": "2025-11-10",
+      "type": "mixed",
+      "exercises": []
+    },
+    {
+      "id": "2025-11-11-mixed",
+      "date": "2025-11-11",
+      "type": "mixed",
+      "exercises": [
+        {
+          "raw": "18х3 (пол, 90)",
+          "name": "пол",
+          "values": [
+            18,
+            3
+          ],
+          "sets": 2,
+          "rest_sec": 90,
+          "unit": "reps"
+        },
+        {
+          "raw": "10х2 (задержка, 120)",
+          "name": "задержка",
+          "values": [
+            10,
+            2
+          ],
+          "sets": 2,
+          "rest_sec": 120,
+          "unit": "reps"
+        },
+        {
+          "raw": "14х2 (ноги выше, 90)",
+          "name": "ноги выше",
+          "values": [
+            14,
+            2
+          ],
+          "sets": 2,
+          "rest_sec": 90,
+          "unit": "reps"
+        },
+        {
+          "raw": "20 (максимум)",
+          "name": "максимум",
+          "values": [
+            20
+          ],
+          "sets": 1,
+          "rest_sec": null,
+          "unit": "reps"
+        }
+      ]
+    },
+    {
+      "id": "2025-11-12-mixed",
+      "date": "2025-11-12",
+      "type": "mixed",
+      "exercises": [
+        {
+          "raw": "Плотная нагрузка",
+          "name": null,
+          "values": [],
+          "sets": null,
+          "rest_sec": null,
+          "unit": "reps"
+        },
+        {
+          "raw": "Эндуро",
+          "name": null,
+          "values": [],
+          "sets": null,
+          "rest_sec": null,
+          "unit": "reps"
+        },
+        {
+          "raw": "Пещеры на кортах",
+          "name": null,
+          "values": [],
+          "sets": null,
+          "rest_sec": null,
+          "unit": "reps"
+        }
+      ]
+    },
+    {
+      "id": "2025-11-13-mixed",
+      "date": "2025-11-13",
+      "type": "mixed",
+      "exercises": []
+    },
+    {
+      "id": "2025-11-14-mixed",
+      "date": "2025-11-14",
+      "type": "mixed",
+      "exercises": [
+        {
+          "raw": "18х3 (пол, 90)",
+          "name": "пол",
+          "values": [
+            18,
+            3
+          ],
+          "sets": 2,
+          "rest_sec": 90,
+          "unit": "reps"
+        },
+        {
+          "raw": "10х2 (задержка, 120)",
+          "name": "задержка",
+          "values": [
+            10,
+            2
+          ],
+          "sets": 2,
+          "rest_sec": 120,
+          "unit": "reps"
+        },
+        {
+          "raw": "14х2 (ноги выше, 90)",
+          "name": "ноги выше",
+          "values": [
+            14,
+            2
+          ],
+          "sets": 2,
+          "rest_sec": 90,
+          "unit": "reps"
+        },
+        {
+          "raw": "15 (максимум)",
+          "name": "максимум",
+          "values": [
+            15
+          ],
+          "sets": 1,
+          "rest_sec": null,
+          "unit": "reps"
+        }
+      ]
+    },
+    {
+      "id": "2025-11-17-pullups",
+      "date": "2025-11-17",
+      "type": "pullups",
+      "exercises": [
+        {
+          "raw": "3х2 но с пола до макушки",
+          "name": "пол",
+          "values": [
+            3,
+            2
+          ],
+          "sets": 2,
+          "rest_sec": null,
+          "unit": "reps"
+        }
+      ]
+    },
+    {
+      "id": "2025-11-18-pushups",
+      "date": "2025-11-18",
+      "type": "pushups",
+      "exercises": [
+        {
+          "raw": "18х3 (пол, 90)",
+          "name": "пол",
+          "values": [
+            18,
+            3
+          ],
+          "sets": 2,
+          "rest_sec": 90,
+          "unit": "reps"
+        },
+        {
+          "raw": "10х2 (задержка, 120)",
+          "name": "задержка",
+          "values": [
+            10,
+            2
+          ],
+          "sets": 2,
+          "rest_sec": 120,
+          "unit": "reps"
+        },
+        {
+          "raw": "14х2 (ноги выше, 90)",
+          "name": "ноги выше",
+          "values": [
+            14,
+            2
+          ],
+          "sets": 2,
+          "rest_sec": 90,
+          "unit": "reps"
+        },
+        {
+          "raw": "20 (максимум)",
+          "name": "максимум",
+          "values": [
+            20
+          ],
+          "sets": 1,
+          "rest_sec": null,
+          "unit": "reps"
+        }
+      ]
+    },
+    {
+      "id": "2025-11-20-pullups",
+      "date": "2025-11-20",
+      "type": "pullups",
+      "exercises": [
+        {
+          "raw": "2 полноценных внутренним",
+          "name": "пол",
+          "values": [
+            2
+          ],
+          "sets": 1,
+          "rest_sec": null,
+          "unit": "reps"
+        }
+      ]
+    },
+    {
+      "id": "2025-11-21-pushups",
+      "date": "2025-11-21",
+      "type": "pushups",
+      "exercises": [
+        {
+          "raw": "20х3 (пол, 90)",
+          "name": "пол",
+          "values": [
+            20,
+            3
+          ],
+          "sets": 2,
+          "rest_sec": 90,
+          "unit": "reps"
+        },
+        {
+          "raw": "10х2 (задержка, 120)",
+          "name": "задержка",
+          "values": [
+            10,
+            2
+          ],
+          "sets": 2,
+          "rest_sec": 120,
+          "unit": "reps"
+        },
+        {
+          "raw": "14х2 (ноги выше, 90)",
+          "name": "ноги выше",
+          "values": [
+            14,
+            2
+          ],
+          "sets": 2,
+          "rest_sec": 90,
+          "unit": "reps"
+        },
+        {
+          "raw": "20 (максимум)",
+          "name": "максимум",
+          "values": [
+            20
+          ],
+          "sets": 1,
+          "rest_sec": null,
+          "unit": "reps"
+        }
+      ]
+    },
+    {
+      "id": "2025-11-25-pushups",
+      "date": "2025-11-25",
+      "type": "pushups",
+      "exercises": [
+        {
+          "raw": "54 раз, максимум",
+          "name": null,
+          "values": [
+            54
+          ],
+          "sets": 1,
+          "rest_sec": null,
+          "unit": "reps"
+        }
+      ]
+    },
+    {
+      "id": "2025-11-27-pullups",
+      "date": "2025-11-27",
+      "type": "pullups",
+      "exercises": [
+        {
+          "raw": "20х2 вис",
+          "name": "вис",
+          "values": [
+            20,
+            2
+          ],
+          "sets": 2,
+          "rest_sec": null,
+          "unit": "sec"
+        },
+        {
+          "raw": "2х2 с опорой",
+          "name": "с опорой",
+          "values": [
+            2,
+            2
+          ],
+          "sets": 2,
+          "rest_sec": null,
+          "unit": "reps"
+        },
+        {
+          "raw": "2х2 негативы",
+          "name": "негатив",
+          "values": [
+            2,
+            2
+          ],
+          "sets": 2,
+          "rest_sec": null,
+          "unit": "reps"
+        },
+        {
+          "raw": "1 внутренний. Вис",
+          "name": "вис",
+          "values": [
+            1
+          ],
+          "sets": 1,
+          "rest_sec": null,
+          "unit": "sec"
+        }
+      ]
+    },
+    {
+      "id": "2025-11-28-pushups",
+      "date": "2025-11-28",
+      "type": "pushups",
+      "exercises": [
+        {
+          "raw": "20х3 (пол, 90)",
+          "name": "пол",
+          "values": [
+            20,
+            3
+          ],
+          "sets": 2,
+          "rest_sec": 90,
+          "unit": "reps"
+        },
+        {
+          "raw": "10х2 (задержка, 120)",
+          "name": "задержка",
+          "values": [
+            10,
+            2
+          ],
+          "sets": 2,
+          "rest_sec": 120,
+          "unit": "reps"
+        },
+        {
+          "raw": "14х2 (ноги выше, 90)",
+          "name": "ноги выше",
+          "values": [
+            14,
+            2
+          ],
+          "sets": 2,
+          "rest_sec": 90,
+          "unit": "reps"
+        },
+        {
+          "raw": "20 (максимум)",
+          "name": "максимум",
+          "values": [
+            20
+          ],
+          "sets": 1,
+          "rest_sec": null,
+          "unit": "reps"
+        }
+      ]
+    },
+    {
+      "id": "2025-12-02-mixed",
+      "date": "2025-12-02",
+      "type": "mixed",
+      "exercises": [
+        {
+          "raw": "20х2 вис",
+          "name": "вис",
+          "values": [
+            20,
+            2
+          ],
+          "sets": 2,
+          "rest_sec": null,
+          "unit": "sec"
+        },
+        {
+          "raw": "5х2 с опорой",
+          "name": "с опорой",
+          "values": [
+            5,
+            2
+          ],
+          "sets": 2,
+          "rest_sec": null,
+          "unit": "reps"
+        },
+        {
+          "raw": "2х2 негативы",
+          "name": "негатив",
+          "values": [
+            2,
+            2
+          ],
+          "sets": 2,
+          "rest_sec": null,
+          "unit": "reps"
+        },
+        {
+          "raw": "1 внутренний. Вис",
+          "name": "вис",
+          "values": [
+            1
+          ],
+          "sets": 1,
+          "rest_sec": null,
+          "unit": "sec"
+        }
+      ]
+    }
+  ]
+}

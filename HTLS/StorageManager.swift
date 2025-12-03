@@ -19,7 +19,7 @@ final class StorageManager: ObservableObject {
         importHistoryOnce()
     }
 
-    /// One-time import from bundled `history_import.json` (ISO8601 dates).
+    /// One-time import from bundled `history_import.json` (new schema with days/trainings).
     private func importHistoryOnce() {
         // Skip if already imported
         if UserDefaults.standard.bool(forKey: importFlagKey) { return }
@@ -31,7 +31,6 @@ final class StorageManager: ObservableObject {
         }
 
         let decoder = JSONDecoder()
-        decoder.dateDecodingStrategy = .iso8601
 
         // Try to load from bundle first, otherwise fall back to embedded JSON
         var imported: [DailyEntry]? = nil
@@ -39,8 +38,15 @@ final class StorageManager: ObservableObject {
         if let fileURL = Bundle.main.url(forResource: "history_import", withExtension: "json") ?? Bundle.main.resourceURL?.appendingPathComponent("history_import.json") {
             do {
                 let data = try Data(contentsOf: fileURL)
-                imported = try decoder.decode([DailyEntry].self, from: data)
-                print("StorageManager: imported \(imported?.count ?? 0) entries from bundled history_import.json")
+                let root = try decoder.decode(HistoryImportRoot.self, from: data)
+                
+                // Convert days to DailyEntry objects
+                let convertedEntries = root.days.compactMap { day in
+                    day.toDailyEntry(trainings: root.trainings)
+                }
+                
+                imported = convertedEntries
+                print("StorageManager: imported \(imported?.count ?? 0) entries from bundled history_import.json (schema v\(root.schemaVersion))")
             } catch {
                 print("StorageManager: failed to decode bundled history_import.json - \(error). Will try embedded JSON.")
             }
@@ -57,9 +63,9 @@ final class StorageManager: ObservableObject {
 
         guard let entriesToImport = imported, !entriesToImport.isEmpty else { return }
 
-        // Merge without duplicating by id
+        // Merge without duplicating by date (since imported entries have new UUIDs)
         for e in entriesToImport {
-            if !entries.contains(where: { $0.id == e.id }) {
+            if !entries.contains(where: { Calendar.current.isDate($0.date, inSameDayAs: e.date) }) {
                 entries.append(e)
             }
         }
